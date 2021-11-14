@@ -93,6 +93,7 @@ button{
     border: none;
     cursor: pointer;
     background-color:  #D3A2D4;
+    box-shadow: 4px 4px 10px rgb(116, 101, 101);
     border-radius: 5px;
 }
 footer{
@@ -114,9 +115,10 @@ footer .gmail{
 }
 i{
     margin: 10px;
+    color: blueviolet;
 }
 
-/* about */
+/* about ===================================================================*/
 .body2{
     display: flex;
     width: 90%;
@@ -161,7 +163,6 @@ i{
 .imgbody{
     width: 300px;
     height: 200px;
-    /* border-radius: 10px; */
 }
 .habit1{
     width: 80%;
@@ -197,7 +198,7 @@ i{
     color: blueviolet;
 }
 
-/* hometown */
+/*====================================== hometown=================================================================== */
 .banner{
     background-image: url(../images/10.jpg);
     background-position: center;
@@ -238,7 +239,7 @@ i{
     color: #fff;
     font-family: 'PT Sans', sans-serif;
 }
-/* contact */
+/* contact ================================================================*/
 .contaner{
     display: flex;
     width: 90%;
@@ -255,6 +256,11 @@ form{
     margin: auto;
     background-color: #D3A2D4;
 }
+.form button{
+    border: 4px solid #ccc;
+    text-transform: uppercase;
+    background-color: #D3A2D4;
+}
 .location{
     width: 49%;
     margin: auto;
@@ -269,6 +275,7 @@ textarea{
     border-radius: 5px;
     border: none;
 }
+/* responsive 375============================================================================ */
 @media screen and (max-width: 375px){
     .images{
         margin: auto;
@@ -390,6 +397,7 @@ textarea{
     }
     
 }
+/* ===========================500============================= */
 @media screen and (max-width: 500px) {
     .images{
         margin: auto;
@@ -412,6 +420,7 @@ textarea{
     }
     footer{
         flex-wrap: wrap;
+        padding: 30px;
     }
     .bunner{
         width: 100%;
@@ -516,6 +525,7 @@ textarea{
     }
     
 }
+/* =============================================768============================== */
 @media screen and (max-width: 768px)
 /* @media(Orientation:portrait) */
 {
@@ -643,6 +653,7 @@ textarea{
         font-size: 15px;
     }
 }
+/* ===============================1024================================= */
 @media screen and (max-width: 1024px){    
     section{
         flex-wrap: wrap-reverse;
