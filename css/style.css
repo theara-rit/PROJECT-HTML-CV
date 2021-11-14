@@ -1,7 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Poppins:wght@300;500&display=swap');
+
 body{
-    background-color: teal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
-    color: orange;
+.menu{
+    background-color: #ccc;
+    margin: 0;
+    box-shadow: 4px 4px 10px rgb(116, 101, 101);
+    display: flex;
+    justify-content: flex-end;
+}
+ul{
+    padding: 0;
+}
+.active{
+    background-color: #D3A2D4;
+}
+.menu a{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
     font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 20px;
+}
+#toggle{
+    display: none;
+}
+.togglearean{
+    background-color: #ccc;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.togglearean label{
+    background-color: #fff;
+    width: 50px;
+    height: 45px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.togglearean label span{
+    background-color: #D3A2D4;
+    width: 80%;
+    height: 4px;
+    margin: 2px 0px;
+}
+.togglearean{
+    display: none;
+}
+section{
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+.siderbarRight{
+    width: 90%;
+    margin: auto;
+}
+.siderbarLeft{
+    width: 80%;
+    margin: auto;
+
+}
+.siderbarRight h1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 8px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    background-color:  #D3A2D4;
+    border-radius: 5px;
+}
+footer{
+    height: 29vh;
+    background-color: #D3A2D4;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 15px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-around;
+}
+footer li{
+    list-style: none;
+}
+footer .gmail{
+    margin-top: 10px;
+}
+i{
+    margin: 10px;
+}
+
+/* about */
+.body2{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+}
+.body1{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+}
+.aboutme{
+    width: 40%;
+    margin: auto;
+}
+.education{
+    width: 40%;
+    margin: auto;
+}
+.imgleft{
+    width: 40%;
+    margin: auto;
+}
+.imgRight{
+    width: 40%;
+    margin: auto;
+}
+.aboutme .button-10{
+    padding: 10px;
+    width: 150px;
+}
+.text-align{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.imgleft img{
+    border-radius: 15px;
+}
+.imgbody{
+    width: 300px;
+    height: 200px;
+    /* border-radius: 10px; */
+}
+.habit1{
+    width: 80%;
+    margin: auto;
+}
+.habit{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: #D3A2D4;
+    padding: 15px;
+    box-shadow: 4px 4px 10px rgb(116, 101, 101);
+}
+.habit p{
+    width: 60%;
+}
+.main-card{
+    width: 80%;
+    margin: auto;
+}
+.card-skill{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-skill .card{
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 30px;
+    width: 190px;
+    text-align: center;
+}
+.width-card{
+    color: blueviolet;
+}
+
+/* hometown */
+.banner{
+    background-image: url(../images/10.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    background-blend-mode: screen;
+    background-color: #2c2b2b;
+    margin: 0;
+}
+.visit{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.tag{
+    text-decoration: none;
+}
+.width-pic{
+    width: 500px;
+    height: 350px;
+    box-shadow: 4px 4px 10px rgb(116, 101, 101);
+}
+.text{
+    width: 40%;
+    margin: auto;
+}
+.pic{
+    width: 40%;
+    margin: auto;
+
+}
+.banner h1 {
+    text-align: center;
+    text-transform: capitalize;
+    margin: auto;
+    line-height: 650px;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+}
+/* contact */
+.contaner{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.contaner button{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+form{
+    width: 49%;
+    margin: auto;
+    background-color: #D3A2D4;
+}
+.location{
+    width: 49%;
+    margin: auto;
+}
+input[type="text"],
+textarea{
+    width: 95%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+@media screen and (max-width: 375px){
+    .images{
+        margin: auto;
+    }
+    .images img{
+        width: 280px;
+    }
+    .menu{
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    #toggle:checked + .menu
+    {
+        display: flex;
+    }
+    .togglearean{
+        display: flex;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .bunner{
+        width: 100%;
+    }
+    .Hometown .text{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .Hometown .visit{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .pic{
+        display: flex;
+        justify-content: center;
+    }
+    .pic img{
+        width: 300px;
+        height: 200px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .button-10{
+        margin-top: 20px;
+    }
+    .section{
+        width: 100%;
+    }
+    .main-section{
+        width: 100%;
+    }
+    .body1{
+        flex-wrap: wrap;
+    }
+    .imgleft{
+        width: 100%;
+    }
+    .aboutme{
+        width: 100%;
+    }
+    .body1 .aboutme p{
+        font-size: 15px;
+    }
+    .body2 .education p{
+        font-size: 15px;
+    }
+    .body2{
+        flex-wrap: wrap-reverse;
+    }
+    .education{
+        width: 100%;
+    }
+    .imgRight{
+        width: 100%;
+    }
+    .imgleft img{
+        width: 340px;
+        height: 330px;
+    }
+    .imgRight img{
+        width: 340px;
+        height: 330px;
+    }
+    .habit1{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .habit{
+        flex-wrap: wrap;
+    }
+    .main-card{
+        width: 100%;
+    }
+    .card-skill{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 10px;
+    }
+    .contaner{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+    form{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .location{
+        width: 100%;
+    }
+    .habit1 .habit p{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .images{
+        margin: auto;
+    }
+    .images img{
+        width: 350px;
+    }
+    .menu{
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    #toggle:checked + .menu
+    {
+        display: flex;
+    }
+    .togglearean{
+        display: flex;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .bunner{
+        width: 100%;
+    }
+    .Hometown .text{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .Hometown .visit{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .pic{
+        display: flex;
+        justify-content: center;
+    }
+    .pic img{
+        width: 300px;
+        height: 200px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .button-10{
+        margin-top: 20px;
+    }
+    .section{
+        width: 100%;
+    }
+    .main-section{
+        width: 100%;
+    }
+    .body1{
+        flex-wrap: wrap;
+    }
+    .imgleft{
+        width: 100%;
+    }
+    .aboutme{
+        width: 100%;
+    }
+    .body1 .aboutme p{
+        font-size: 15px;
+    }
+    .body2 .education p{
+        font-size: 15px;
+    }
+    .body2{
+        flex-wrap: wrap-reverse;
+    }
+    .education{
+        width: 100%;
+    }
+    .imgRight{
+        width: 100%;
+    }
+    .imgleft img{
+        width: 340px;
+        height: 330px;
+    }
+    .imgRight img{
+        width: 340px;
+        height: 330px;
+    }
+    .habit1{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .habit{
+        flex-wrap: wrap;
+    }
+    .habit p{
+        font-size: 15px;
+    }
+    .main-card{
+        width: 100%;
+    }
+    .card-skill{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 10px;
+    }
+    .contaner{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+    form{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .location{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .habit1 .habit p{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 768px)
+/* @media(Orientation:portrait) */
+{
+    .menu{
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    section{
+        flex-wrap: wrap-reverse;
+        width: 90%;
+    }
+    section .siderbarRight p{
+        font-size: 15px;
+    }
+    .footer-Right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .gmail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bunner{
+        width: 100%;
+    }
+    .Hometown .text{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .Hometown .visit{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .pic{
+        display: flex;
+        justify-content: center;
+    }
+    .pic img{
+        width: 300px;
+        height: 200px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .visit .text p{
+        font-size: 15px;
+    }
+    .button-10{
+        margin-top: 20px;
+    }
+    .habit1{
+        width: 100%;
+    }
+    .habit p{
+        width: 40%;
+        font-size: 15px;
+    }
+    .card-skill{
+        width: 100%;
+    }
+    .body1{
+        flex-wrap: wrap;
+    }
+    .imgleft{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgRight{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutme{
+        width: 100%;
+    }
+    .body1 .aboutme p{
+        font-size: 15px;
+    }
+    .body2 .education p{
+        font-size: 15px;
+    }
+    .body2{
+        flex-wrap: wrap-reverse;
+    }
+    .education{
+        width: 100%;
+    }
+    .imgleft img{
+        width: 340px;
+        height: 330px;
+    }
+    .imgRight img{
+        width: 340px;
+        height: 330px;
+    }
+    .contaner{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    form{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .location{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .habit p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1024px){    
+    section{
+        flex-wrap: wrap-reverse;
+    }
+    .images{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bunner{
+        width: 100%;
+        text-align: center;
+    }
+    .visit{
+        width: 90%;
+    }
+    .pic img{
+        width: 320px;
+        height: 200px;
+    }
+    .text p{ 
+        font-size: 15px;
+    }
+    .card{
+        margin: 10px;
+    }
+    .section{
+        width: 100%;
+    }
+    .contaner{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    form{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .location{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
 }
